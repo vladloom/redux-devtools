@@ -8,7 +8,7 @@ import { getOptions } from '../options/syncOptions';
 export const store = configureStore();
 
 // Listen for keyboard shortcuts
-chrome.commands.onCommand.addListener((shortcut) => {
+chrome.commands?.onCommand.addListener((shortcut) => {
   openDevToolsWindow(shortcut as DevToolsPosition);
 });
 

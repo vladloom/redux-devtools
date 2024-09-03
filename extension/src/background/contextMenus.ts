@@ -26,6 +26,6 @@ export function removeMenu() {
   chrome.contextMenus.removeAll();
 }
 
-chrome.contextMenus.onClicked.addListener(({ menuItemId }) => {
+chrome.contextMenus?.onClicked.addListener(({ menuItemId }) => {
   openDevToolsWindow(menuItemId as DevToolsPosition);
 });
